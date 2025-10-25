@@ -43,4 +43,12 @@ public class MSTProcessor {
         System.out.println("Results written to " + outputFile);
     }
 
+    public static void main(String[] args) {
+        try {
+            processGraphs("assign_3_input.json", "assign_3_output.json");
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }
